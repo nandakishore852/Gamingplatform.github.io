@@ -1,0 +1,158 @@
+<html>
+<head>
+  <!--Pinch zooming-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <!--Page title goes here-->
+	<title>Gaming platform</title>
+
+<!--CSS-->
+	<style type="text/css">
+
+		html{
+			position: relative;
+			min-height: 100%;
+		}
+
+		body{
+			margin-bottom: 90px;
+      	}
+
+		.footer{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			background-color: black;
+			color:white;
+		}
+
+		.container{
+			width:auto;
+			padding: 0px 15px;
+		}
+
+		.margin-top-5{
+			margin-top: 5%;
+		}
+
+		.margin-bottom-5{
+			margin-bottom: 5%;
+		}
+
+		.first-alphabet-large::first-letter{
+			font-size: 3rem;
+		}
+
+	</style>
+
+<!--Bootstrap installation for CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: #e9ecef">
+  <!--navigation bar-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="Gaming platform.html">Gaming_Platform</a>
+</nav>
+
+<!--Gap between nav bar and sliding images-->
+<div style="height: 1rem;"></div>
+
+<!-- Sliding images-->
+<main>
+<div class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex h-80 justify-content-center">
+                <img class="d-block w-50"  style="border:3px solid black; border-radius: 7px;" src="pubg2.jpg" alt="First slide">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex h-80  justify-content-center">
+                <img class="d-block w-50"  style="border:3px solid black; border-radius: 7px;" src="gta2.jpg" alt="Second slide">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex h-80  justify-content-center">
+                <img class="d-block w-50" style="border:3px solid black; border-radius: 7px;" src="cod2.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Gap between sliding images and cards-->
+<div style="height: 1rem;"></div>
+
+<!--Card container-->
+<div class="container">
+	<div class="row justify-content-around">
+		<!--Card-1 starts here-->
+<div class="card mb-3" style="width: 18rem; background-color: black;">
+	<div style="height: 0.3rem;"></div>
+  <center><img  src="pubg1.jpg" style="border:2px dashed #e9ecef; width: 96%; border-radius: 7px;" alt="PLAYERUNKNOWN'S BATTLEGROUNDS"></center>
+  <div class="card-body">
+    <h5 class="card-title text-primary">PUBG</h5>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <p class="card-text" style="color: white;">Battlegrounds is a player versus player shooter game in which up to one hundred players fight...</p>
+    <div class="d-flex justify-content-end">
+    <a href="pubg.html" class="btn btn-outline-primary btn-block">View</a>
+  </div>
+  </div>
+</div>
+
+<!--Card-2 starts here-->
+<div class="card mb-3" style="width: 18rem; background-color: black;">
+	<div style="height: 0.3rem;"></div>
+  <center><img src="gta3.jpg" style="border:2px dashed #e9ecef; width:96%; border-radius: 7px;" alt="Grand Theft Auto V"></center>
+  <div class="card-body">
+    <h5 class="card-title text-primary">Grand Theft Auto V</h5>
+    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+    <p class="card-text" style="color: white;">Grand Theft Auto V is an action-adventure game played from either a third-person or first...</p>
+    <div class="d-flex justify-content-end">
+    <a href="gta.html" class="btn btn-outline-primary btn-block">View</a>
+</div>
+  </div>
+</div>
+
+<!--Card-3 starts here-->
+<div class="card mb-3" style="width: 18rem; background-color: black;">
+	<div style="height: 0.3rem;"></div>
+  <center><img src="cod1.jpg" style="border:2px dashed #e9ecef;width: 96%; border-radius: 7px;" alt="Call Of Duty"></center>
+  <div class="card-body">
+    <h5 class="card-title text-primary">Call Of Duty</h5>
+    <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+    <p class="card-text" style="color: white;">Call of Duty is a first-person shooter video game based on id Tech 3, and was released on oct...</p>
+    <div class="d-flex justify-content-end">
+    <a href="callofduty.html" class="btn btn-outline-primary btn-block">View</a>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</main>
+
+<!--Gap between cards and footer-->
+<div style="height: 3rem;"></div>
+
+<!--jumbotron
+<div class="jumbotron">
+    <h1 class="display-4">Hello World !</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+</div>-->
+
+<!--footer-->
+<footer class="footer">
+	<div class="container text-center">
+		<span class="text-muted">COPYRIGHT &copy 2019 All Rights Reserved.</span>
+	</div>
+</footer>
+
+<!--Bootstrap installation for javascript and jquery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
