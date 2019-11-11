@@ -1,26 +1,125 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<!--Pinch zooming-->
-	<meta name="viewport" content="width=device-width, initial-scale=0.1">
-	<!--Page title goes here-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Page title goes here-->
 	<title>PlayerUnknown's Battlegrounds</title>
 	<link rel="icon" href="joy2.png"></link>
 
 	<!--CSS-->
 	<style type="text/css">
 
-		html{
-			position: relative;
-			min-height: 100%;
-		}
-
 		body{
-			margin-bottom: 90px;
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+	}
+
+		.someheader{
+			background-color: #007bff;
+			width: 100%;
+			height: 59px;
+			color: white;
+			line-height: 60px;
+			padding-left: 18px;
+			font-size: 21px;
+			text-decoration: none;
+			cursor: pointer;
 		}
 
+		@media screen and (min-width: 320px) and (max-width: 450px){
+			.someheader{
+			background-color: #007bff;
+			width: 100%;
+			height: 55px;
+			color: white;
+			line-height: 55px;
+			padding-left: 18px;
+			font-size: 20px;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		}
+
+		@media screen and (min-width: 320px) and (max-width: 450px){
+			.text-after-header{
+			font-size: 20px;
+			padding-left: 40px;
+			font-weight: 300;
+			padding-top: 10px;
+		}
+		}
+
+		@media screen and (min-width: 451px) and (max-width: 700px){
+			.text-after-header{
+			font-size: 30px;
+			padding-left: 40px;
+			font-weight: 300;
+			padding-top: 10px;
+		}
+		}
+
+		@media screen and (min-width: 701px) and (max-width: 900px){
+			.text-after-header{
+			font-size: 40px;
+			padding-left: 60px;
+			font-weight: 300;
+			padding-top: 10px;
+			
+		}
+		}
+
+		@media screen and (min-width: 901px) and (max-width: 1548px){
+			.text-after-header{
+			font-size: 60px;
+			padding-left: 120px;
+			font-weight: 300;			
+		}
+		}
+
+		@media screen and (min-width: 320px) and (max-width: 450px){
+			.mutedtext{
+				padding-right: 15px;
+				text-align: right;
+				font-size: 12px;
+				color: #6c757d;
+		}
+		}
+
+		@media screen and (min-width: 451px) and (max-width: 700px){
+			.mutedtext{
+				padding-right: 20px;
+				text-align: right;
+				font-size: 16px;
+				color: #6c757d;
+		}
+		}
+
+		@media screen and (min-width: 701px) and (max-width: 900px){
+			.mutedtext{
+				padding-right: 40px;
+				text-align: right;
+				font-size: 20px;
+				color: #6c757d;
+		}
+		}
+
+		@media screen and (min-width: 901px) and (max-width: 1548px){
+			.mutedtext{
+				padding-right: 120px;
+				text-align: right;
+				font-size: 20px;
+				color: #6c757d;
+		}
+		}
+		
 		.footer{
 			position: absolute;
-			bottom: 0;
+			bottom: 10;
 			width: 100%;
 			height: 65px;
 			text-align: center;
@@ -28,64 +127,35 @@
 			color:white;
 		}
 
-		.container{
-			width:auto;
-			padding: 0 15px;
-		}
-
-		.margin-top-5{
-			margin-top: 1%;
-		}
-
-		.margin-bottom-5{
-			margin-bottom: 5%;
-		}
-
-		.first-alphabet-large::first-letter{
-			font-size: 3rem;
-		}
-
-	a:hover{
-      font-size: 23px;
-    }
-
-	.innerfooter{
+	  .innerfooter{
       height: 30px;
       width: 30px;
       cursor: pointer;
       }
 
-      
-
 	</style>
 
 	<!--Bootstrap installation for CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
 </head>
+
 <body style="background-color: #e9ecef">
-<!--navigation bar-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Gaming_Platform</a>
-</nav>
 
-<!--Blog title-->
-<div class="container">
-	<div class="row">
-		<div class="col-md-10 col-sm-12">
-			<h1 class="display-4 margin-top-5">PlayerUnknown's Battlegrounds</h1>
-		</div>
-		<div class="col-md-12 col-sm-12 d-flex justify-content-end align-items-end">
-			<p>
-				<small class="text-muted">Last update 3 mins ago</small>
-			</p>
-		</div>
-	</div>
-</div>
+	<!--Header-->
+	<nav class="someheader">
+		<a>Gaming_Platform</a>
+	</nav>
 
-<!--Image-->
-<div class="container">
+	<!--text after header-->
+	<p class="text-after-header">PlayerUnknown's Battlegrounds</p>
+
+	<!--muted text-->
+	<p class="mutedtext">
+		<small class="text-muted">Last update 3 mins ago</small>
+	</p>
+
+	<!--Image-->
+	<div class="container">
 			<figure class="figure">
 			<img src="pubg3.jpg" class=" figure-img img-fluid" style="border:3px solid black;border-radius: 10px;" alt="Show some text">
 			<figcaption class="figure-caption">PlayerUnknown's Brendan Greene</figcaption>
@@ -101,21 +171,11 @@
 	<p class="margin-top-5">
                     Players are dropped into a wide, open area, and they must fight to the death - all while the battlefield shrinks, adding pressure to all in its grip. Use a variety of interesting weapons and vehicles amid the BATTLEGROUNDS. "Killing off another player cuts down on your competition, but it also offers up the opportunity to grab some loot. Your character can only carry around a limited amount of gear, so there are important questions to ask whenever you come across new items. Is it better to stick with your current 9mm pistol, or hold out hope that you'll be able to find ammo for a found 12 gauge shotgun?". BATTLEGROUNDS is running on Unreal Engine 4, players take on the Battle Royale experience on one of four maps, each with different characteristics. BATTLEGROUNDS is a good balance between Arma 3 and H1Z1. BATTLEGROUNDS takes place on different islands (maps), but the main island for BATTLEGROUNDS is called Erangel. An abandoned Russian island where a military occupation was controlling the island. The military occupation tested chemical/biological experiments on the islands population, after a resistance attack on a biological facility, the island had to be abandoned. When you spawn, everyone in the game gets put in on a small island where you wait x amount of minutes to load into the game (here to make the players load into the game properly with all the assets, etc.). After the time limit is up during the starting area, you get teleported in a paradrop plane, you get flown over an area and then you get thrown out of a plane with a parachute. Once landed, loot spawns in different areas, it's based on the Arma 3 model, it's all random. The loot system is a lot more in-depth than H1Z1, so there will be more time spent farming for better weapons/attachments/armor, etc. Depending on the players gear (vest 1 - 3 and backpack 1 - 3) you can hold as much as you can carry in your slots. A player can hold 2 primary weapons, 1 pistol, 1 melee weapon and grenades. All weapons/items that are on the player or weapon itself don't take up inventory space in your backpack. You can have 1 grenade on your character, while any extra grenades you pick up take up space. Every few minutes, the playable area of the map begins to shrink down towards a random location, with any player caught outside the safe area taking damage incrementally, and eventually being eliminated if the safe zone is not entered in time; in game, the players see the boundary as a shimmering blue wall that contracts over time. This results in a more confined map, in turn increasing the chances of encounters. During the course of the match, random regions of the map are highlighted in red and bombed, posing a threat to players who remain in that area. In both cases, players are warned a few minutes before these events, giving them time to relocate to safety. A plane will fly over various parts of the playable map occasionally at random, or wherever a player uses a flare gun, and drop a loot package, containing items which are typically unobtainable during normal gameplay. These packages emit highly visible red smoke, drawing interested players near it and creating further confrontations. On average, a full round takes no more than 30 minutes. Winners in PUBG are shown a message ”WINNER WINNER CHICKEN DINNER“.
 
-
-
-
-                </p>
+</p>
 </div>
 
 <!--Gap between image and footer-->
-<div style="height: 4rem;"></div>
-
-<!--jumbotron
-<div class="jumbotron">
-    <h1 class="display-4">Hello World !</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-</div>-->
-
+<div style="height: 2rem;"></div>
 
 <!--footer-->
 	<footer class="footer">
@@ -131,9 +191,10 @@
 </footer>
 
 
-<!--Bootstrap installation for javascript and jquery-->
+	<!--Bootstrap installation for javascript and jquery-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+
+</body>
 </html>
